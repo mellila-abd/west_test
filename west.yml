@@ -1,0 +1,28 @@
+manifest : 
+  remotes : 
+    - name : zphyrproj 
+      url-base: https://github.com/zephyrproject-rtos
+
+    - name : Gitmellila
+      url-base: https://github.com/mellila-abd
+
+
+  projects:
+    - name: test-manifest
+      remote: Gitmellila  
+      path: application/test
+      revision: main
+
+    - name: hal_nxp
+      remote: zphyrproj
+      clone-depth: 1 
+      path: extas/hal_nxp
+
+    - name:
+      remote : zphyrproj
+      path: extras/zephyr
+      revision: main
+  self: 
+    # This repository should be cloned to
+    path: west_test
+    
