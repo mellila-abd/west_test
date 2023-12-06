@@ -8,11 +8,12 @@ manifest :
 
 
   projects:
-    - name: git_manifest_test
-      remote: Gitmellila  
-      path: application/test
-      revision: main
 
+    - name: hal_nxp
+      remote: zephyrproject
+      clone-depth: 1
+      path: extras/hal_nxp
+      
   self: 
     # This repository should be cloned to
     path: west_test
