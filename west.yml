@@ -8,7 +8,7 @@ manifest :
 
 
   projects:
-    - name: test-manifest
+    - name: git_manifest_test
       remote: Gitmellila  
       path: application/test
       revision: main
@@ -25,4 +25,4 @@ manifest :
   self: 
     # This repository should be cloned to
     path: west_test
-    
+
