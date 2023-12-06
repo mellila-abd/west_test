@@ -3,17 +3,17 @@ manifest :
     - name : zphyrproj 
       url-base: https://github.com/zephyrproject-rtos
 
-    - name : Gitmellila
+    - name : app
       url-base: https://github.com/mellila-abd
 
 
   projects:
 
-    - name: hal_nxp
-      remote: zephyrproject
-      clone-depth: 1
-      path: extras/hal_nxp
-      
+    - name: git-manifest-test
+      remote: app  
+      path: application/test
+      revision: main
+    
   self: 
     # This repository should be cloned to
     path: west_test
