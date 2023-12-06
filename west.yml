@@ -8,15 +8,11 @@ manifest :
 
 
   projects:
+  
     - name: git_manifest_test
       remote: Gitmellila  
       path: application/test
       revision: main
-
-    - name: hal_nxp
-      remote: zphyrproj
-      clone-depth: 1 
-      path: extas/hal_nxp
 
     - name:
       remote : zphyrproj
