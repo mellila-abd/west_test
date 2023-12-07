@@ -1,4 +1,11 @@
 manifest : 
+
+   defaults:
+    remote: zphyrproj 
+    revision: main
+
+  group-filter: [-group_zephyr,+group_forvia]
+
   remotes : 
     - name : zphyrproj 
       url-base: https://github.com/zephyrproject-rtos
@@ -11,16 +18,30 @@ manifest :
 
     - name: git-manifest-test
       remote: app  
+      revision: master
       path: application/test
+      description: |
+        "New project"
+      groups:
+        - group_forvia
 
-    - name: reqmgmt
+     - name: hal_nxp
+      remote: zephyrproject
+      clone-depth: 1
+      path: extras/hal_nxp
+      revision: master
+      groups:
+        - group_zephyr
+ 
+    - name: zephyr
       remote: zphyrproj
-      path: zephyr/project
-      revision: main
+      groupes:
+        - group_zephyr
+      path: zephyr/mainproject
+      import : true
 
-    
+   
   self: 
     # This repository should be cloned to
     path: west_test
-
 
