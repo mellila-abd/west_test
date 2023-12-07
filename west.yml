@@ -12,12 +12,6 @@ manifest :
     - name: git-manifest-test
       remote: app  
       path: application/test
-
-    - name: reqmgmt
-      remote: zphyrproj
-      path: zephyr/project
-      revision: main
-
     
   self: 
     # This repository should be cloned to
